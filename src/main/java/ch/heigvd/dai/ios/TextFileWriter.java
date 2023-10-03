@@ -1,16 +1,14 @@
 package ch.heigvd.dai.ios;
 
-import java.io.FileWriter;
-import java.io.Writer;
+import java.io.*;
 import java.nio.charset.Charset;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class TextFileWriter {
 
-    public void write(String filename, String content, Charset encoding) {
-        try(Writer writer = new FileWriter(filename, encoding)){
-            writer.write(content.toString());
+    public static BufferedWriter writer(String filename, Charset encoding) {
+        try{
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filename, encoding));
+            return writer;
         } catch (FileNotFoundException e) {
             // TODO
         } catch (IOException e) {

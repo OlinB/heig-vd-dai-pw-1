@@ -1,0 +1,12 @@
+Gaps is an Academical Planification System est un système d'information permettant la planification académique en organisation modulaire.
+
+SACHEM est un logiciel d'optimisation combinatoire permettant de construire de manière semi-automatique des horaires.
+
+Ces outils permettent:
+
+    d'être le plus économe possible (personnel et infrastructure) et d'ainsi pouvoir se permettre d'investir, notamment, dans une large offre de cours à choix, dans des heures de soutien aux études (tutorats, mise à niveau), etc.
+    d'offrir des conditions de travail correctes et équitables. De nombreuses contraintes pédagogiques sont prises en compte telles que répartir les effectifs entre enseignements parallèles de manière équilibrée, distribuer les leçons d'une même unité sur plusieurs jours, respecter au mieux les préférences horaires des enseignant-e-s, etc.
+    de suivre l'évolution du parcours individuel de chaque étudiant-e au fur et à mesure de ses réussites/choix/répétitions. Ceci permet a) d'adapter les horaires de façon individuelle de sorte à maintenir une durée d'études moyenne la plus courte possible, b) de minimiser le nombre total de périodes d'enseignement qu'aura suivi un-e diplômé-e en moyenne et c) de maintenir la motivation des étudiant-e-s en échec partiel en leur permettant d'avancer dans leur formation en parallèle avec la répétition des matières échouées.
+    Il s'agit là d'un privilège unique dans tout le paysage des hautes écoles.
+
+Disposer d'outils informatiques pour planifier les enseignements ne suffit pas, les divers plans d'études doivent être coordonnés de façon à exploiter au mieux les similitudes et les synergies entre les diverses formations (cours communs) afin de regrouper des étudiant-e-s ayant différents parcours pour suivre un même enseignement (décision du nombre d'enseignements de telle ou telle discipline en fonction de l'effectif global concerné et équilibrage des effectifs entre ces différents enseignements).
