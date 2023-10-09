@@ -8,7 +8,7 @@ import picocli.CommandLine.Parameters;
 import java.io.File;
 import java.util.concurrent.Callable;
 
-@Command(name = "replaceWord", mixinStandardHelpOptions = true, version = "replaceWord 0.1",
+@Command(name = "replaceWord", mixinStandardHelpOptions = true, version = "replaceWord 0.2",
         description = "Replace all occurence of specific work in a file text and create new file")
 class ReplaceWord implements Callable<Integer>{
     @Option(names = {"-i", "--if","--inputFile"}, paramLabel = "ARCHIVE",
@@ -27,8 +27,11 @@ class ReplaceWord implements Callable<Integer>{
     @Option(names = {"--oe", "--outputEncoding"}, defaultValue = "UTF-8", description = "Encoding of the output file")
     private String outputEncoding;
 
-    @Option(names = {"-h", "--help"}, usageHelp = true, description = "display a help message")
+    @Option(names = {"-h", "--help"}, usageHelp = true, description = "display this help message")
     private boolean helpRequested = false;
+
+    @Option(names = {"-V", "--version"}, versionHelp = true, description = "Display version info")
+    private boolean versionRequested = false;
 
     @Option(names = {"-s", "--sw", "--searchedWord"}, paramLabel = "SEARCH",
     description = "The searched word will be replaced")
@@ -47,6 +50,16 @@ class ReplaceWord implements Callable<Integer>{
 
 public class Main {
     public static void main(String[] args) {
-        new CommandLine(new Main()).execute(args);
+        CommandLine commandLine = new CommandLine(new ReplaceWord());
+        if(commandLine.isUsageHelpRequested()){
+            commandLine.usage(System.out);
+            return;
+        }
+        else if (commandLine.isVersionHelpRequested()){
+            commandLine.printVersionHelp(System.out);
+            return;
+        }
+        int exitCode = commandLine.execute(args);
+        System.exit(exitCode);
     }
 }

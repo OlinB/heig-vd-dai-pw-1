@@ -19,6 +19,7 @@ public class TextFileReader {
             // TODO
         } catch (IOException e) {
             // TODO
+            System.err.println("Erreur lors de la lecture du fichier");
         }
         throw new UnsupportedOperationException("Not implemented yet");
     }
