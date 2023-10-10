@@ -1,4 +1,4 @@
-Gaps is an Academical Planification System est un système d'information permettant la planification académique en organisation modulaire.
+test est un système d'information permettant la planification académique en organisation modulaire.
 
 SACHEM est un logiciel d'optimisation combinatoire permettant de construire de manière semi-automatique des horaires.
 
