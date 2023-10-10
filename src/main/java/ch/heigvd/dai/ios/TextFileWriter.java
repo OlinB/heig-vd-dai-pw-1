@@ -13,6 +13,7 @@ public class TextFileWriter {
             // TODO
         } catch (IOException e) {
             // TODO
+            System.err.println("Erreur lors de l'ecriture du fichier");
         }
         throw new UnsupportedOperationException("Not implemented yet");
     }
